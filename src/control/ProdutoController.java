@@ -6,6 +6,7 @@
 package control;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import model.Produto;
 
 /**
@@ -40,5 +41,24 @@ public class ProdutoController {
                 break;
             }
         }
+    }
+    
+    public double mediaProduto(){
+        try{
+        ArrayList<Produto>Lista = this.getProducts();
+        double media = 0, count = 0;
+        for(Produto p: Lista){
+            media += p.getPreco();
+            count++;
+        }
+        media = media/count;
+        if(media>0){
+            return media;
+        }
+        else{
+            return 0;
+        }}
+        catch(Exception e){ JOptionPane.showMessageDialog(null, e);
+        return 0;}
     }
 }

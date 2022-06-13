@@ -27,8 +27,8 @@ public class Cadastro extends javax.swing.JFrame {
 
     private DefaultTableModel tbl1;
     private DefaultTableModel tbl2;
-    private String[] generos = {"Rock","Pop","Samba","Pagode"};
-    private String[] bandas = {"Queen","AC/DC","Iron Maiden", "Maroon 5", "Turma do Pagode", "Exaltasamba", "Grupo Revelação"};
+    private String[] generos = {"Rock","Pop","Samba","Pagode","Metal","Punk","MPB", "Axé", "Forró", "Sertanejo"};
+    private String[] bandas = {"Queen","AC/DC","Iron Maiden", "Maroon 5", "Turma do Pagode", "Exaltasamba", "Grupo Revelação","Black Sabbath", "Slikpnot","Ramones","Rancid","Titãs", "Kid Abelha", "Os Mutantes", "Banda Eva", "Chiclete com Banana","É o tchan","Calcinha Preta", "Aviões do Forró","Bruno & Marrone", "Jorge & Mateus","Trio Parada Dura"};
     public static ClienteController clControl;
     public static ProdutoController plControl;
     /**
@@ -52,9 +52,10 @@ public class Cadastro extends javax.swing.JFrame {
         tbl1.addColumn("Nome");
         tbl1.addColumn("Email");
         tbl1.addColumn("Cpf");
-        tbl1.addColumn("Email");
+        tbl1.addColumn("Telefone");
         tblClients.setModel(tbl1);
         tbl2 = new DefaultTableModel();
+        tbl2.addColumn("Nome");
         tbl2.addColumn("Codigo");
         tbl2.addColumn("Descricao");
         tbl2.addColumn("Banda");
@@ -71,6 +72,17 @@ public class Cadastro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        jTabbedPane = new javax.swing.JTabbedPane();
+        jPanelClienteCadastro = new javax.swing.JPanel();
+        jComboBoxBanda = new javax.swing.JComboBox<>();
+        txtNome = new javax.swing.JTextField();
+        txtCpf = new javax.swing.JTextField();
+        txtIdade = new javax.swing.JTextField();
+        jComboBoxGen = new javax.swing.JComboBox<>();
+        txtEmail = new javax.swing.JTextField();
+        txtTelefone = new javax.swing.JTextField();
+        btnCadastro = new javax.swing.JButton();
         lblCadastro = new javax.swing.JLabel();
         lblNome = new javax.swing.JLabel();
         lblCpf = new javax.swing.JLabel();
@@ -79,17 +91,11 @@ public class Cadastro extends javax.swing.JFrame {
         lblBand = new javax.swing.JLabel();
         lblEmail = new javax.swing.JLabel();
         lblTel = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
-        txtCpf = new javax.swing.JTextField();
-        txtIdade = new javax.swing.JTextField();
-        jComboBoxGen = new javax.swing.JComboBox<>();
-        txtEmail = new javax.swing.JTextField();
-        txtTelefone = new javax.swing.JTextField();
-        btnCadastro = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         lblExcluirCliente = new javax.swing.JLabel();
         txtExcluirCliente = new javax.swing.JTextField();
         btnExcluir = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         lblBuscar = new javax.swing.JLabel();
         lblBuscarNome = new javax.swing.JLabel();
         lblBuscarCpf = new javax.swing.JLabel();
@@ -103,6 +109,25 @@ public class Cadastro extends javax.swing.JFrame {
         lblBuscarTelefone = new javax.swing.JLabel();
         txtBuscarClienteTelefone = new javax.swing.JTextField();
         btnBuscarClienteTelefone = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblClients = new javax.swing.JTable();
+        btnCliente60Anos = new javax.swing.JButton();
+        lblCliente18Anos = new javax.swing.JLabel();
+        btnCliente18Anos = new javax.swing.JButton();
+        lblClienteMaiorIdade = new javax.swing.JLabel();
+        btnClienteMaiorIdade = new javax.swing.JButton();
+        btnClienteMenorIdade = new javax.swing.JButton();
+        lblClienteMenorIdade = new javax.swing.JLabel();
+        lblClienteMediaIdade = new javax.swing.JLabel();
+        btnClienteMediaIdade = new javax.swing.JButton();
+        lblCliente60Anos = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblProdutoBanda = new javax.swing.JLabel();
+        lblProdutoCodigo = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtProdutoPreco = new javax.swing.JTextField();
+        jComboBoxProdutoBanda = new javax.swing.JComboBox<>();
         txtExcluirProduto = new javax.swing.JTextField();
         btnProdutoExcluir = new javax.swing.JButton();
         txtProdutoNome = new javax.swing.JTextField();
@@ -113,30 +138,7 @@ public class Cadastro extends javax.swing.JFrame {
         lblProdutoNome = new javax.swing.JLabel();
         lblProdutoDescricao = new javax.swing.JLabel();
         lblProdutoPreco = new javax.swing.JLabel();
-        lblProdutoBanda = new javax.swing.JLabel();
-        lblProdutoCodigo = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBoxBanda = new javax.swing.JComboBox<>();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tblClients = new javax.swing.JTable();
-        txtProdutoPreco = new javax.swing.JTextField();
-        jComboBoxProdutoBuscarBanda = new javax.swing.JComboBox<>();
-        lblClienteMediaIdade = new javax.swing.JLabel();
-        btnClienteMediaIdade = new javax.swing.JButton();
-        lblCliente60Anos = new javax.swing.JLabel();
-        btnCliente60Anos = new javax.swing.JButton();
-        lblCliente18Anos = new javax.swing.JLabel();
-        btnCliente18Anos = new javax.swing.JButton();
-        lblClienteMaiorIdade = new javax.swing.JLabel();
-        btnClienteMaiorIdade = new javax.swing.JButton();
-        btnClienteMenorIdade = new javax.swing.JButton();
-        lblClienteMenorIdade = new javax.swing.JLabel();
-        lblBuscarProduto = new javax.swing.JLabel();
-        lblBuscarProdutoPreco = new javax.swing.JLabel();
-        lblBuscarProdutoDescricao = new javax.swing.JLabel();
-        txtBuscarProdutoPreco = new javax.swing.JTextField();
-        btnBuscarProdutoPreco = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         txtBuscarProdutoDescricao = new javax.swing.JTextField();
         btnBuscarProdutoDescricao = new javax.swing.JButton();
         lblBuscarProdutoBanda = new javax.swing.JLabel();
@@ -144,28 +146,34 @@ public class Cadastro extends javax.swing.JFrame {
         lblBuscarProdutoCodigo = new javax.swing.JLabel();
         txtBuscarProdutoCodigo = new javax.swing.JTextField();
         btnBuscarProdutoCodigo = new javax.swing.JButton();
-        jComboBoxProdutoBanda = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblProdutos = new javax.swing.JTable();
+        lblBuscarProduto = new javax.swing.JLabel();
+        lblBuscarProdutoPreco = new javax.swing.JLabel();
+        lblBuscarProdutoDescricao = new javax.swing.JLabel();
+        jComboBoxProdutoBuscarBanda = new javax.swing.JComboBox<>();
+        txtBuscarProdutoPreco = new javax.swing.JTextField();
+        btnBuscarProdutoPreco = new javax.swing.JButton();
+        btnCaro = new javax.swing.JButton();
+        lblProdutoCaro = new javax.swing.JLabel();
+        lblProdutoBarato = new javax.swing.JLabel();
+        btnBarato = new javax.swing.JButton();
+        lblMedia = new javax.swing.JLabel();
+        btnMedia = new javax.swing.JButton();
+        lblAcimaMedia = new javax.swing.JLabel();
+        btnAcimaMedia = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblCadastro.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        lblCadastro.setText("Cadastro Cliente");
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel2.setText("Good's Store");
 
-        lblNome.setText("Nome:");
+        jTabbedPane.setName(""); // NOI18N
 
-        lblCpf.setText("CPF:");
+        jPanelClienteCadastro.setName(""); // NOI18N
 
-        lblIdade.setText("Idade:");
-
-        lblGen.setText("Gênero Favorito:");
-
-        lblBand.setText("Banda Favorita:");
-
-        lblEmail.setText("Email:");
-
-        lblTel.setText("Telefone:");
+        jComboBoxBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -207,6 +215,23 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
+        lblCadastro.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblCadastro.setText("Cadastro Cliente");
+
+        lblNome.setText("Nome:");
+
+        lblCpf.setText("CPF:");
+
+        lblIdade.setText("Idade:");
+
+        lblGen.setText("Gênero Favorito:");
+
+        lblBand.setText("Banda Favorita:");
+
+        lblEmail.setText("Email:");
+
+        lblTel.setText("Telefone:");
+
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel1.setText("Excluir Cliente");
 
@@ -218,6 +243,101 @@ public class Cadastro extends javax.swing.JFrame {
                 btnExcluirActionPerformed(evt);
             }
         });
+
+        javax.swing.GroupLayout jPanelClienteCadastroLayout = new javax.swing.GroupLayout(jPanelClienteCadastro);
+        jPanelClienteCadastro.setLayout(jPanelClienteCadastroLayout);
+        jPanelClienteCadastroLayout.setHorizontalGroup(
+            jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelClienteCadastroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblCadastro)
+                    .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnCadastro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblTel)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtTelefone))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblEmail)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtEmail))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblBand)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jComboBoxBanda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblGen)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jComboBoxGen, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblIdade)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtIdade)
+                            .addGap(95, 95, 95))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblNome)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtNome))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanelClienteCadastroLayout.createSequentialGroup()
+                            .addComponent(lblCpf)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel1)
+                    .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanelClienteCadastroLayout.createSequentialGroup()
+                        .addComponent(lblExcluirCliente)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtExcluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(784, Short.MAX_VALUE))
+        );
+        jPanelClienteCadastroLayout.setVerticalGroup(
+            jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelClienteCadastroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblCadastro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNome)
+                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCpf)
+                    .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblIdade)
+                    .addComponent(txtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblGen)
+                    .addComponent(jComboBoxGen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblBand)
+                    .addComponent(jComboBoxBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEmail)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTel)
+                    .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCadastro)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblExcluirCliente)
+                    .addComponent(txtExcluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnExcluir)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+
+        jTabbedPane.addTab("Cadastro Cliente", jPanelClienteCadastro);
 
         lblBuscar.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lblBuscar.setText("Buscar Cliente");
@@ -257,6 +377,175 @@ public class Cadastro extends javax.swing.JFrame {
                 btnBuscarClienteTelefoneActionPerformed(evt);
             }
         });
+
+        tblClients.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tblClients);
+
+        btnCliente60Anos.setText("Calcular quantidade!");
+        btnCliente60Anos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCliente60AnosActionPerformed(evt);
+            }
+        });
+
+        lblCliente18Anos.setText("A quantidade de clientes com menos de 18 anos:");
+
+        btnCliente18Anos.setText("Calcular quantidade!");
+        btnCliente18Anos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCliente18AnosActionPerformed(evt);
+            }
+        });
+
+        lblClienteMaiorIdade.setText("A maior idade do sistema é:");
+
+        btnClienteMaiorIdade.setText("Calcular maior idade!");
+        btnClienteMaiorIdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClienteMaiorIdadeActionPerformed(evt);
+            }
+        });
+
+        btnClienteMenorIdade.setText("Calcular menor idade!");
+        btnClienteMenorIdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClienteMenorIdadeActionPerformed(evt);
+            }
+        });
+
+        lblClienteMenorIdade.setText("A menor idade do sistema é:");
+
+        lblClienteMediaIdade.setText("A média de idade dos clientes é:");
+
+        btnClienteMediaIdade.setText("Calcular média!");
+        btnClienteMediaIdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClienteMediaIdadeActionPerformed(evt);
+            }
+        });
+
+        lblCliente60Anos.setText("A quantidade de clientes com mais de 60 anos:");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblBuscar)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblBuscarEmail)
+                            .addComponent(lblBuscarCpf)
+                            .addComponent(lblBuscarNome)
+                            .addComponent(lblBuscarTelefone)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnBuscarClienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtBuscarClienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscarClienteEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtBuscarClienteEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscarClienteCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtBuscarClienteCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnBuscarClienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtBuscarClienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(lblClienteMenorIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCliente60Anos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblClienteMaiorIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnClienteMaiorIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCliente18Anos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCliente60Anos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnClienteMediaIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblCliente18Anos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnClienteMenorIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblClienteMediaIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(117, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblBuscar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarNome)
+                            .addComponent(txtBuscarClienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarClienteNome)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarCpf)
+                            .addComponent(txtBuscarClienteCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarClienteCpf)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarEmail)
+                            .addComponent(txtBuscarClienteEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarClienteEmail)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarTelefone)
+                            .addComponent(txtBuscarClienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarClienteTelefone))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(lblClienteMediaIdade)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnClienteMediaIdade)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCliente60Anos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCliente60Anos)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCliente18Anos)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnCliente18Anos)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblClienteMaiorIdade)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnClienteMaiorIdade)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblClienteMenorIdade)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnClienteMenorIdade)))
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+
+        jTabbedPane.addTab("Buscar Cliente", jPanel2);
+
+        lblProdutoBanda.setText("Banda:");
+
+        lblProdutoCodigo.setText("Codigo:");
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel3.setText("Excluir Produto");
+
+        jLabel4.setText("Codigo:");
+
+        txtProdutoPreco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtProdutoPrecoActionPerformed(evt);
+            }
+        });
+
+        jComboBoxProdutoBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
         btnProdutoExcluir.setText("Excluir");
         btnProdutoExcluir.addActionListener(new java.awt.event.ActionListener() {
@@ -300,94 +589,84 @@ public class Cadastro extends javax.swing.JFrame {
 
         lblProdutoPreco.setText("Preço:");
 
-        lblProdutoBanda.setText("Banda:");
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblProdutoPreco)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblProdutoBanda))
+                    .addComponent(jLabel3)
+                    .addComponent(lblCadastro1)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnProdutoCadastro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(lblProdutoCodigo)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtProdutoCodigo))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jComboBoxProdutoBanda, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblProdutoDescricao)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(txtProdutoDescricao))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblProdutoNome)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(txtProdutoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(btnProdutoExcluir, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addComponent(jLabel4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtExcluirProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(760, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblCadastro1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblProdutoNome)
+                    .addComponent(txtProdutoNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblProdutoDescricao)
+                    .addComponent(txtProdutoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblProdutoBanda)
+                        .addComponent(lblProdutoPreco)
+                        .addComponent(txtProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxProdutoBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblProdutoCodigo)
+                    .addComponent(txtProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProdutoCadastro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtExcluirProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnProdutoExcluir)
+                .addContainerGap(138, Short.MAX_VALUE))
+        );
 
-        lblProdutoCodigo.setText("Codigo:");
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel3.setText("Excluir Produto");
-
-        jLabel4.setText("Codigo:");
-
-        jComboBoxBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-
-        tblClients.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(tblClients);
-
-        txtProdutoPreco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtProdutoPrecoActionPerformed(evt);
-            }
-        });
-
-        jComboBoxProdutoBuscarBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-
-        lblClienteMediaIdade.setText("A média de idade dos clientes é:");
-
-        btnClienteMediaIdade.setText("Calcular média!");
-        btnClienteMediaIdade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClienteMediaIdadeActionPerformed(evt);
-            }
-        });
-
-        lblCliente60Anos.setText("A quantidade de clientes com mais de 60 anos:");
-
-        btnCliente60Anos.setText("Calcular quantidade!");
-        btnCliente60Anos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCliente60AnosActionPerformed(evt);
-            }
-        });
-
-        lblCliente18Anos.setText("A quantidade de clientes com menos de 18 anos:");
-
-        btnCliente18Anos.setText("Calcular quantidade!");
-        btnCliente18Anos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCliente18AnosActionPerformed(evt);
-            }
-        });
-
-        lblClienteMaiorIdade.setText("A maior idade do sistema é:");
-
-        btnClienteMaiorIdade.setText("Calcular maior idade!");
-        btnClienteMaiorIdade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClienteMaiorIdadeActionPerformed(evt);
-            }
-        });
-
-        btnClienteMenorIdade.setText("Calcular menor idade!");
-        btnClienteMenorIdade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClienteMenorIdadeActionPerformed(evt);
-            }
-        });
-
-        lblClienteMenorIdade.setText("A menor idade do sistema é:");
-
-        lblBuscarProduto.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        lblBuscarProduto.setText("Buscar Produto");
-
-        lblBuscarProdutoPreco.setText("Preço:");
-
-        lblBuscarProdutoDescricao.setText("Descricao:");
-
-        btnBuscarProdutoPreco.setText("Buscar por Preço!");
-        btnBuscarProdutoPreco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarProdutoPrecoActionPerformed(evt);
-            }
-        });
+        jTabbedPane.addTab("Cadastro Produto", jPanel1);
 
         btnBuscarProdutoDescricao.setText("Buscar por Descricao!");
         btnBuscarProdutoDescricao.addActionListener(new java.awt.event.ActionListener() {
@@ -414,18 +693,164 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        jComboBoxProdutoBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-
         tblProdutos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
             }
         ));
         jScrollPane2.setViewportView(tblProdutos);
+
+        lblBuscarProduto.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        lblBuscarProduto.setText("Buscar Produto");
+
+        lblBuscarProdutoPreco.setText("Preço:");
+
+        lblBuscarProdutoDescricao.setText("Descricao:");
+
+        jComboBoxProdutoBuscarBanda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
+
+        btnBuscarProdutoPreco.setText("Buscar por Preço!");
+        btnBuscarProdutoPreco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarProdutoPrecoActionPerformed(evt);
+            }
+        });
+
+        btnCaro.setText("Calcular");
+        btnCaro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCaroActionPerformed(evt);
+            }
+        });
+
+        lblProdutoCaro.setText("Produto mais caro:");
+
+        lblProdutoBarato.setText("Produto mais barato:");
+
+        btnBarato.setText("Calcular");
+        btnBarato.setToolTipText("");
+        btnBarato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBaratoActionPerformed(evt);
+            }
+        });
+
+        lblMedia.setText("Média de Preços:");
+
+        btnMedia.setText("Calcular");
+        btnMedia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMediaActionPerformed(evt);
+            }
+        });
+
+        lblAcimaMedia.setText("Quantidade de produtos com preços a cima da média:");
+
+        btnAcimaMedia.setText("Calcular");
+        btnAcimaMedia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAcimaMediaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblBuscarProduto)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblBuscarProdutoPreco)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtBuscarProdutoPreco))
+                    .addComponent(btnBuscarProdutoPreco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblBuscarProdutoDescricao)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtBuscarProdutoDescricao))
+                    .addComponent(btnBuscarProdutoDescricao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblBuscarProdutoBanda)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBoxProdutoBuscarBanda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnBuscarProdutoBanda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblBuscarProdutoCodigo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtBuscarProdutoCodigo))
+                    .addComponent(btnBuscarProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblAcimaMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAcimaMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBarato, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProdutoBarato, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProdutoCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblProdutoCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblProdutoBarato)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBarato, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblMedia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblAcimaMedia)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnAcimaMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(lblBuscarProduto)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarProdutoPreco)
+                            .addComponent(txtBuscarProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarProdutoPreco)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarProdutoDescricao)
+                            .addComponent(txtBuscarProdutoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarProdutoDescricao)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarProdutoBanda)
+                            .addComponent(jComboBoxProdutoBuscarBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarProdutoBanda)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblBuscarProdutoCodigo)
+                            .addComponent(txtBuscarProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnBuscarProdutoCodigo))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
+        );
+
+        jTabbedPane.addTab("Buscar Produto", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -434,305 +859,19 @@ public class Cadastro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(lblProdutoCodigo)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtProdutoCodigo))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblProdutoNome)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtProdutoNome, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblProdutoDescricao)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtProdutoDescricao))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblProdutoPreco)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(lblProdutoBanda)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jComboBoxProdutoBanda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnExcluir, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblExcluirCliente)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtExcluirCliente))
-                                .addComponent(lblCadastro, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblNome)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblCpf)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtCpf))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblIdade)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtIdade))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblGen)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jComboBoxGen, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblBand)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jComboBoxBanda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblEmail)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtEmail))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(lblTel)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(txtTelefone))
-                                .addComponent(btnCadastro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(btnProdutoCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnProdutoExcluir, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jLabel4)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtExcluirProduto)))
-                    .addComponent(lblCadastro1))
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblBuscarNome)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarClienteNome))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblBuscarCpf)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarClienteCpf))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblBuscarEmail)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarClienteEmail))
-                            .addComponent(btnBuscarClienteTelefone, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnBuscarClienteEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnBuscarClienteCpf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblBuscar)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblBuscarTelefone)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtBuscarClienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(btnBuscarClienteNome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(0, 1, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblBuscarProduto)
-                            .addComponent(btnBuscarProdutoCodigo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblBuscarProdutoCodigo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarProdutoCodigo))
-                            .addComponent(btnBuscarProdutoBanda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblBuscarProdutoBanda)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBoxProdutoBuscarBanda, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblBuscarProdutoPreco)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarProdutoPreco))
-                            .addComponent(btnBuscarProdutoPreco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblBuscarProdutoDescricao)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarProdutoDescricao))
-                            .addComponent(btnBuscarProdutoDescricao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblClienteMenorIdade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblClienteMediaIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnClienteMediaIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnCliente60Anos, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCliente60Anos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnCliente18Anos, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnClienteMenorIdade, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnClienteMaiorIdade, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
-                            .addComponent(lblClienteMaiorIdade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblCliente18Anos, javax.swing.GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE))
-                        .addGap(0, 27, Short.MAX_VALUE)))
-                .addGap(86, 86, 86))
+                    .addComponent(jLabel2)
+                    .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblCadastro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblNome)
-                            .addComponent(txtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblCpf)
-                            .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblIdade)
-                            .addComponent(txtIdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblGen)
-                            .addComponent(jComboBoxGen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBand)
-                            .addComponent(jComboBoxBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblEmail)
-                            .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblTel)
-                            .addComponent(txtTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnCadastro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblExcluirCliente)
-                            .addComponent(txtExcluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnExcluir))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblBuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarNome)
-                            .addComponent(txtBuscarClienteNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarClienteNome)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarCpf)
-                            .addComponent(txtBuscarClienteCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarClienteCpf)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarEmail)
-                            .addComponent(txtBuscarClienteEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarClienteEmail)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarTelefone)
-                            .addComponent(txtBuscarClienteTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarClienteTelefone))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblClienteMediaIdade)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnClienteMediaIdade)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblCliente60Anos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnCliente60Anos)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblCliente18Anos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnCliente18Anos)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblClienteMaiorIdade)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnClienteMaiorIdade)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblClienteMenorIdade)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnClienteMenorIdade)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblCadastro1)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProdutoNome)
-                    .addComponent(txtProdutoNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProdutoDescricao)
-                    .addComponent(txtProdutoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblProdutoBanda)
-                        .addComponent(lblProdutoPreco)
-                        .addComponent(txtProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jComboBoxProdutoBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblProdutoCodigo)
-                    .addComponent(txtProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnProdutoCadastro)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtExcluirProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnProdutoExcluir)
-                .addGap(0, 106, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblBuscarProduto)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarProdutoPreco)
-                            .addComponent(txtBuscarProdutoPreco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarProdutoPreco)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarProdutoDescricao)
-                            .addComponent(txtBuscarProdutoDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarProdutoDescricao)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarProdutoBanda)
-                            .addComponent(jComboBoxProdutoBuscarBanda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarProdutoBanda)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblBuscarProdutoCodigo)
-                            .addComponent(txtBuscarProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnBuscarProdutoCodigo)))
-                .addGap(109, 109, 109))
+                .addComponent(jTabbedPane))
         );
+
+        jTabbedPane.getAccessibleContext().setAccessibleName("Cadastro Cliente");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -798,7 +937,7 @@ public class Cadastro extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Não insira texto em campos que pedem idade!");
         }
         catch(StringNullException e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+            JOptionPane.showMessageDialog(null, "Preencha todos os campos antes de cadastrar!");
         }
         catch(CpfCadastrado e){
             JOptionPane.showMessageDialog(null, e.getMessage());
@@ -809,6 +948,7 @@ public class Cadastro extends javax.swing.JFrame {
     private void btnBuscarClienteNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteNomeActionPerformed
         try{
             tbl1.setNumRows(0);
+            double aux = 0;
             String name = txtBuscarClienteNome.getText().toLowerCase();
             if(name.equals("")){
                 throw new StringNullException();
@@ -818,9 +958,11 @@ public class Cadastro extends javax.swing.JFrame {
                for(Cliente c: clients){
                    String control = c.getNome().toLowerCase();
                    if(control.startsWith(name)){
-                       tbl1.addRow(new Object[]{c.getNome(),c.getCpf(),c.getEmail(),c.getTelefone()});   
+                       tbl1.addRow(new Object[]{c.getNome(),c.getEmail(),c.getCpf(),c.getTelefone()});   
+                       aux = 1;
                     }
                 }
+               if(aux == 0){ throw new ItemInexistente();}
                tblClients.setModel(tbl1);
                ClearFields();
             }
@@ -828,16 +970,17 @@ public class Cadastro extends javax.swing.JFrame {
          catch(StringNullException e){
              JOptionPane.showMessageDialog(null, "O nome a pesquisar não pode ser vazio!");
          }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null,"O nome " + e.getMessage() );
+            txtExcluirProduto.requestFocus();
         }
-        
     }//GEN-LAST:event_btnBuscarClienteNomeActionPerformed
 
     private void btnBuscarClienteCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteCpfActionPerformed
         try{
             tbl1.setNumRows(0);
             String cpf = txtBuscarClienteCpf.getText().toLowerCase();
+            double aux = 0;
             if(cpf.equals("")){
                 throw new StringNullException();
             }
@@ -846,9 +989,11 @@ public class Cadastro extends javax.swing.JFrame {
                for(Cliente c: clients){
                    String control = c.getCpf().toLowerCase();
                    if(control.startsWith(cpf)){
-                       tbl1.addRow(new Object[]{c.getNome(),c.getCpf(),c.getEmail(),c.getTelefone()});   
+                       tbl1.addRow(new Object[]{c.getNome(),c.getEmail(),c.getCpf(),c.getTelefone()}); 
+                       aux =1;
                     }
                 }
+               if(aux == 0){ throw new ItemInexistente();}
                tblClients.setModel(tbl1);
                ClearFields();
             }
@@ -856,14 +1001,15 @@ public class Cadastro extends javax.swing.JFrame {
          catch(StringNullException e){
              JOptionPane.showMessageDialog(null, "O cpf a pesquisar não pode ser vazio!");
          }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null,"O Cpf " + e.getMessage() );
+            txtExcluirProduto.requestFocus();
         }
-        
     }//GEN-LAST:event_btnBuscarClienteCpfActionPerformed
 
     private void btnBuscarClienteEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteEmailActionPerformed
         try{
+            double aux = 0;
             tbl1.setNumRows(0);
             String email = txtBuscarClienteEmail.getText().toLowerCase();
             if(email.equals("")){
@@ -874,9 +1020,11 @@ public class Cadastro extends javax.swing.JFrame {
                for(Cliente c: clients){
                    String control = c.getEmail().toLowerCase();
                    if(control.startsWith(email)){
-                       tbl1.addRow(new Object[]{c.getNome(),c.getCpf(),c.getEmail(),c.getTelefone()});   
+                       tbl1.addRow(new Object[]{c.getNome(),c.getEmail(),c.getCpf(),c.getTelefone()});
+                       aux = 1;
                     }
                 }
+               if(aux == 0){ throw new ItemInexistente();}
                tblClients.setModel(tbl1);
                ClearFields();
             }
@@ -884,14 +1032,15 @@ public class Cadastro extends javax.swing.JFrame {
          catch(StringNullException e){
              JOptionPane.showMessageDialog(null, "O email a pesquisar não pode ser vazio!");
          }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null,"O email " + e.getMessage() );
+            txtExcluirProduto.requestFocus();
         }
     }//GEN-LAST:event_btnBuscarClienteEmailActionPerformed
 
     private void btnBuscarClienteTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarClienteTelefoneActionPerformed
         try{
-            tbl1.addColumn("Telefone");
+            double aux = 0;
             tbl1.setNumRows(0);
             String telefone = txtBuscarClienteTelefone.getText().toLowerCase();
             if(telefone.equals("")){
@@ -902,18 +1051,21 @@ public class Cadastro extends javax.swing.JFrame {
                for(Cliente c: clients){
                    String control = c.getTelefone().toLowerCase();
                    if(control.startsWith(telefone)){
-                       tbl1.addRow(new Object[]{c.getNome(),c.getCpf(),c.getEmail(),c.getTelefone()});   
+                       tbl1.addRow(new Object[]{c.getNome(),c.getEmail(),c.getCpf(),c.getTelefone()});
+                       aux = 1;
                     }
                 }
+               if(aux == 0){ throw new ItemInexistente();}
                tblClients.setModel(tbl1);
                ClearFields();
             }
         }
-         catch(StringNullException e){
+        catch(StringNullException e){
              JOptionPane.showMessageDialog(null, "O telefone a pesquisar não pode ser vazio!");
          }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null,"O Telefone " + e.getMessage() );
+            txtExcluirProduto.requestFocus();
         }
     }//GEN-LAST:event_btnBuscarClienteTelefoneActionPerformed
 
@@ -932,7 +1084,7 @@ public class Cadastro extends javax.swing.JFrame {
             if("".equals(descricao) || "".equals(nome)){
                 throw new StringNullException();
             }
-            int codigo = Integer.parseInt(txtProdutoCodigo.getText());
+            int codigo = Integer.parseInt(txtProdutoCodigo.getText().toString());
             double price = Double.parseDouble(txtProdutoPreco.getText().toString());
             if(codigo <= 0 || price <= 0){
                 throw new IntInvalido();
@@ -943,8 +1095,8 @@ public class Cadastro extends javax.swing.JFrame {
                     throw new CpfCadastrado();
                 }
             }
-            if(jComboBoxProdutoBuscarBanda.getSelectedIndex() > 0 ){
-                String band = (String)jComboBoxProdutoBuscarBanda.getSelectedItem();
+            if(jComboBoxProdutoBanda.getSelectedIndex() > 0 ){
+                String band = (String)jComboBoxProdutoBanda.getSelectedItem();
                 plControl.cadastrar(nome,descricao,price,band,codigo);
                 JOptionPane.showMessageDialog(null,"Produto cadastrado com sucesso!");
                 ClearFields2();
@@ -961,11 +1113,14 @@ public class Cadastro extends javax.swing.JFrame {
         }
         
         catch(StringNullException e){
-            JOptionPane.showMessageDialog(null, e.getMessage());
+            JOptionPane.showMessageDialog(null, "Preencha todos os campos antes de cadastrar!");
         }
         catch(CpfCadastrado e){
             JOptionPane.showMessageDialog(null, "Esse código já foi cadastrado anteriormente!");
         } 
+       catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Não insira texto em campos que pedem número como código e preço!");
+        }
     }//GEN-LAST:event_btnProdutoCadastroActionPerformed
 
     private void txtProdutoCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProdutoCodigoActionPerformed
@@ -983,11 +1138,11 @@ public class Cadastro extends javax.swing.JFrame {
                 else{
                     ArrayList<Cliente>client = this.clControl.getClient();
                     for(Cliente c: client){
-                        if(c.getCpf() == cpf){
+                        if(c.getCpf().equals(cpf)){
                             clControl.excluirCliente(cpf);
                             tbl1.setNumRows(0);
                             tblClients.setModel(tbl1);
-                            JOptionPane.showMessageDialog(null, "Produto excluído com sucesso!");
+                            JOptionPane.showMessageDialog(null, "Cliente excluído com sucesso!");
                             cpf = "0";
                         }
                     }
@@ -1020,7 +1175,6 @@ public class Cadastro extends javax.swing.JFrame {
                     throw new IntInvalido();
                 }
                 else{
-                    JOptionPane.showMessageDialog(null, code);
                     ArrayList<Produto>produtos = this.plControl.getProducts();
                     for(Produto p: produtos){
                         if(p.getCodigo() == code){
@@ -1046,6 +1200,9 @@ public class Cadastro extends javax.swing.JFrame {
         catch(ItemInexistente e){
             JOptionPane.showMessageDialog(null,"O produto " + e.getMessage() );
             txtExcluirProduto.requestFocus();
+        }
+	catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Digite um código válido, apenas com números!");
         }
     }//GEN-LAST:event_btnProdutoExcluirActionPerformed
 
@@ -1087,21 +1244,35 @@ public class Cadastro extends javax.swing.JFrame {
             if(c.getIdade() <= 18){
             count++;}
         }
+        if(count == 0){
+            throw new ItemInexistente();
+        }
+        else{
         lblCliente18Anos.setText("A quantidade de clientes com menos de 18 é: " + count);
+        }
     }//GEN-LAST:event_btnCliente18AnosActionPerformed
 
     private void btnClienteMaiorIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteMaiorIdadeActionPerformed
+        try{
         ArrayList<Cliente>Lista = this.clControl.getClient();
         int maiorIdade = 0;
         for(Cliente c: Lista){
             if(c.getIdade() > maiorIdade){
             maiorIdade = c.getIdade();}
         }
-        lblClienteMaiorIdade.setText("A maior idade no sistema é: " + maiorIdade);
+        if(maiorIdade == 0){throw new IntInvalido(); }
+        else{
+        lblClienteMaiorIdade.setText("A maior idade no sistema é: " + maiorIdade);}}
+        catch(IntInvalido e){
+            JOptionPane.showMessageDialog(null, "Não existe nenhum cliente cadastro");
+                }
     }//GEN-LAST:event_btnClienteMaiorIdadeActionPerformed
 
     private void btnClienteMenorIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteMenorIdadeActionPerformed
-        ArrayList<Cliente>Lista = this.clControl.getClient();
+        try{ArrayList<Cliente>Lista = this.clControl.getClient();
+        if(Lista.size() == 0){
+            throw new IntInvalido();
+        }
         int menorIdade = Lista.get(0).getIdade();
         for(Cliente c: Lista){
             if(menorIdade > c.getIdade()){
@@ -1109,12 +1280,20 @@ public class Cadastro extends javax.swing.JFrame {
             }
         }
         lblClienteMenorIdade.setText("A menor idade no sistema é: " + menorIdade);
+        }
+        catch(IntInvalido e){
+            JOptionPane.showMessageDialog(null, "Não existem clientes cadastrados no sistema!");
+        }
     }//GEN-LAST:event_btnClienteMenorIdadeActionPerformed
 
     private void btnBuscarProdutoPrecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdutoPrecoActionPerformed
        try{
             tbl2.setNumRows(0);
-            double preco = Double.parseDouble(txtBuscarClienteNome.getText()), aux = 0;
+            if(txtBuscarProdutoPreco.getText().equals("")){
+                throw new StringNullException();
+            }
+            else{
+            double preco = Double.parseDouble(txtBuscarProdutoPreco.getText()), aux = 0;
             if(preco <= 0){
                 throw new IntInvalido();
             }
@@ -1122,13 +1301,14 @@ public class Cadastro extends javax.swing.JFrame {
                 ArrayList<Produto>products = this.plControl.getProducts();
                 for(Produto p: products){
                    if(p.getPreco() == preco){
-                       tbl2.addRow(new Object[]{p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
+                       tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
                        aux = 1;
                     }
                 }
                 if(aux == 0){ throw new ItemInexistente();}
                 tblClients.setModel(tbl1);
                 ClearFields2();
+            }
             }
         }
          catch(IntInvalido e){
@@ -1137,19 +1317,176 @@ public class Cadastro extends javax.swing.JFrame {
         catch(ItemInexistente e){
             JOptionPane.showMessageDialog(null, "Produto com tal preço " + e.getMessage());
         }
+        catch(StringNullException e){
+           JOptionPane.showMessageDialog(null, "Digite um preço a ser pesquisado. ");
+        }
+       catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Não insira texto em campos que pedem número como preço!");
+        }
     }//GEN-LAST:event_btnBuscarProdutoPrecoActionPerformed
 
     private void btnBuscarProdutoDescricaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdutoDescricaoActionPerformed
-        // TODO add your handling code here:
+        try{
+            tbl2.setNumRows(0);
+            if(txtBuscarProdutoDescricao.getText().equals("")){
+                throw new StringNullException();
+            }
+            else{
+            String description = (txtBuscarProdutoDescricao.getText());
+            int aux = 0;
+            ArrayList<Produto>products = this.plControl.getProducts();
+            for(Produto p: products){
+                if(p.getDescricao().equals(description)){
+                   tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
+                   aux = 1;
+                }
+            }
+            if(aux == 0){ throw new ItemInexistente();}
+                tblClients.setModel(tbl1);
+                ClearFields2();
+            }
+        }
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null, "Produto com tal descricao " + e.getMessage());
+        }
+        catch(StringNullException e){
+           JOptionPane.showMessageDialog(null, "Digite uma descrição a ser pesquisado");
+        }
     }//GEN-LAST:event_btnBuscarProdutoDescricaoActionPerformed
 
     private void btnBuscarProdutoBandaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdutoBandaActionPerformed
-        // TODO add your handling code here:
+        try{
+            tbl2.setNumRows(0);
+            if(jComboBoxProdutoBuscarBanda.getSelectedIndex() == 0 ){
+                throw new StringNullException();
+            }
+            else{
+            String banda = (String)jComboBoxProdutoBuscarBanda.getSelectedItem();
+            int aux = 0;
+            ArrayList<Produto>products = this.plControl.getProducts();
+            for(Produto p: products){
+                if(p.getBanda().equals(banda)){
+                   tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
+                   aux = 1;
+                }
+            }
+            if(aux == 0){throw new ItemInexistente();}
+                tblProdutos.setModel(tbl2);
+                ClearFields2();
+            }
+        }
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null, "Produto com tal banda " + e.getMessage());
+        }
+        catch(StringNullException e){
+           JOptionPane.showMessageDialog(null, "Não existe nehum cadastro dessa Banda");
+        }
     }//GEN-LAST:event_btnBuscarProdutoBandaActionPerformed
 
     private void btnBuscarProdutoCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdutoCodigoActionPerformed
-        // TODO add your handling code here:
+        try{
+            tbl2.setNumRows(0);
+            if(txtBuscarProdutoCodigo.getText().equals("")){
+                throw new StringNullException();
+            }
+            else{
+            double code = Double.parseDouble(txtBuscarProdutoCodigo.getText());
+            int aux = 0;
+            ArrayList<Produto>products = this.plControl.getProducts();
+            for(Produto p: products){
+                JOptionPane.showMessageDialog(null, code + " Teste");
+                if(p.getCodigo() == (code)){
+                   tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
+                   aux = 1;
+                }
+            }
+            if(aux == 0){throw new ItemInexistente();}
+                tblClients.setModel(tbl1);
+                ClearFields2();
+            }
+        }
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null, "Produto com tal descricao " + e.getMessage());
+        }
+        catch(StringNullException e){
+           JOptionPane.showMessageDialog(null, "Digite um produto a ser pesquisado");
+        }
+        catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Não insira texto em campos que pedem número como código!");
+        }
     }//GEN-LAST:event_btnBuscarProdutoCodigoActionPerformed
+
+    private void btnCaroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaroActionPerformed
+        try{
+        ArrayList<Produto>Lista = this.plControl.getProducts();
+        double maiorPreco = 0;
+        for(Produto p: Lista){
+            if(p.getPreco() > maiorPreco){
+            maiorPreco = p.getPreco();}
+        }
+        if(maiorPreco == 0){throw new IntInvalido(); }
+        else{
+        lblProdutoCaro.setText("O maior preço no sistema é: " + maiorPreco);}}
+        catch(IntInvalido e){
+            JOptionPane.showMessageDialog(null, "Não existem produtos cadastrados no sistema!");
+        }
+    }//GEN-LAST:event_btnCaroActionPerformed
+
+    private void btnMediaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMediaActionPerformed
+        try{
+            double media = plControl.mediaProduto();
+        
+        if(media == 0){
+            throw new ItemInexistente();   
+        }
+        else{
+            lblMedia.setText("A média de preço é igual a: " + String.format("%.2f",media));
+        }
+        }
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null, "Não existem produtos cadastrados no sistema!");
+        }
+    }//GEN-LAST:event_btnMediaActionPerformed
+
+    private void btnBaratoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBaratoActionPerformed
+        try{ArrayList<Produto>Lista = this.plControl.getProducts();
+        if(Lista.size() == 0){
+            throw new IntInvalido();
+        }
+        double menorPreco = Lista.get(0).getPreco();
+        for(Produto p: Lista){
+            if(menorPreco > p.getPreco()){
+                menorPreco = p.getPreco();
+            }
+        }
+        lblProdutoBarato.setText("O menor preço no sistema é: " + menorPreco);
+        }
+        catch(IntInvalido e){
+            JOptionPane.showMessageDialog(null, "Não existem produtos cadastrados no sistema!");
+        }
+    }//GEN-LAST:event_btnBaratoActionPerformed
+
+    private void btnAcimaMediaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcimaMediaActionPerformed
+        try{
+        double media = plControl.mediaProduto();
+        if(media == 0){
+            throw new ItemInexistente();            
+        }
+        else{
+            ArrayList<Produto>Lista = this.plControl.getProducts();
+            double count = 0;
+            for(Produto p: Lista){
+                if(media < p.getPreco()){
+                    count++;
+                }
+            }
+            lblAcimaMedia.setText("Quantidade de produtos com preços a cima da média: " + String.format("%.2f",count));
+        }
+        }
+        catch(ItemInexistente e){
+            JOptionPane.showMessageDialog(null, "Não existem produtos cadastrados no sistema!");
+        }
+    }//GEN-LAST:event_btnAcimaMediaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1181,7 +1518,7 @@ public class Cadastro extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+            public void run(){
                 new Cadastro().setVisible(true);
             }
         });
@@ -1218,6 +1555,8 @@ public class Cadastro extends javax.swing.JFrame {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAcimaMedia;
+    private javax.swing.JButton btnBarato;
     private javax.swing.JButton btnBuscarClienteCpf;
     private javax.swing.JButton btnBuscarClienteEmail;
     private javax.swing.JButton btnBuscarClienteNome;
@@ -1227,12 +1566,14 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JButton btnBuscarProdutoDescricao;
     private javax.swing.JButton btnBuscarProdutoPreco;
     private javax.swing.JButton btnCadastro;
+    private javax.swing.JButton btnCaro;
     private javax.swing.JButton btnCliente18Anos;
     private javax.swing.JButton btnCliente60Anos;
     private javax.swing.JButton btnClienteMaiorIdade;
     private javax.swing.JButton btnClienteMediaIdade;
     private javax.swing.JButton btnClienteMenorIdade;
     private javax.swing.JButton btnExcluir;
+    private javax.swing.JButton btnMedia;
     private javax.swing.JButton btnProdutoCadastro;
     private javax.swing.JButton btnProdutoExcluir;
     private javax.swing.JComboBox<String> jComboBoxBanda;
@@ -1240,10 +1581,17 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBoxProdutoBanda;
     private javax.swing.JComboBox<String> jComboBoxProdutoBuscarBanda;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanelClienteCadastro;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane;
+    private javax.swing.JLabel lblAcimaMedia;
     private javax.swing.JLabel lblBand;
     private javax.swing.JLabel lblBuscar;
     private javax.swing.JLabel lblBuscarCpf;
@@ -1267,8 +1615,11 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JLabel lblExcluirCliente;
     private javax.swing.JLabel lblGen;
     private javax.swing.JLabel lblIdade;
+    private javax.swing.JLabel lblMedia;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblProdutoBanda;
+    private javax.swing.JLabel lblProdutoBarato;
+    private javax.swing.JLabel lblProdutoCaro;
     private javax.swing.JLabel lblProdutoCodigo;
     private javax.swing.JLabel lblProdutoDescricao;
     private javax.swing.JLabel lblProdutoNome;
