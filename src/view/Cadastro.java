@@ -326,9 +326,9 @@ public class Cadastro extends javax.swing.JFrame {
                         .addComponent(lblCpf)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 644, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(127, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
         jPanelClienteCadastroLayout.setVerticalGroup(
             jPanelClienteCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -515,7 +515,7 @@ public class Cadastro extends javax.swing.JFrame {
                             .addComponent(lblCliente18Anos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnClienteMenorIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblClienteMediaIdade, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -683,7 +683,7 @@ public class Cadastro extends javax.swing.JFrame {
                             .addComponent(txtExcluirProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(43, 43, 43)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -722,7 +722,7 @@ public class Cadastro extends javax.swing.JFrame {
                             .addComponent(txtExcluirProduto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnProdutoExcluir)))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         jTabbedPane.addTab("Cadastro Produto", jPanel1);
@@ -845,17 +845,17 @@ public class Cadastro extends javax.swing.JFrame {
                         .addComponent(txtBuscarProdutoCodigo))
                     .addComponent(btnBuscarProdutoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 423, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblAcimaMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAcimaMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblAcimaMedia, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
                     .addComponent(lblMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBarato, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblProdutoBarato, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblProdutoCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblProdutoCaro, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAcimaMedia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnMedia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnBarato, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCaro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(22, 22, 22))
         );
         jPanel3Layout.setVerticalGroup(
@@ -906,7 +906,7 @@ public class Cadastro extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnBuscarProdutoCodigo))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
 
         jTabbedPane.addTab("Buscar Produto", jPanel3);
@@ -918,15 +918,20 @@ public class Cadastro extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(800, 800, 800))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 980, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane))
+                .addComponent(jTabbedPane)
+                .addGap(19, 19, 19))
         );
 
         jTabbedPane.getAccessibleContext().setAccessibleName("Cadastro Cliente");
@@ -1159,6 +1164,7 @@ public class Cadastro extends javax.swing.JFrame {
                 plControl.cadastrar(nome,descricao,price,band,codigo);
                 JOptionPane.showMessageDialog(null,"Produto cadastrado com sucesso!");
                 ClearFields2();
+                AtualizaTableProduto();
             }
             else{
                 throw new ComboBoxNull();
@@ -1248,6 +1254,7 @@ public class Cadastro extends javax.swing.JFrame {
                         tbl1.setNumRows(0);
                         tblClients.setModel(tbl1);
                         JOptionPane.showMessageDialog(null, "Produto excluído com sucesso!");
+                        AtualizaTableProduto();
                     }
                     else if(aux != 1){
                         throw new ItemInexistente();
@@ -1306,12 +1313,7 @@ public class Cadastro extends javax.swing.JFrame {
             if(c.getIdade() <= 18){
             count++;}
         }
-        if(count == 0){
-            throw new ItemInexistente();
-        }
-        else{
         lblCliente18Anos.setText("A quantidade de clientes com menos de 18 é: " + count);
-        }
     }//GEN-LAST:event_btnCliente18AnosActionPerformed
 
     private void btnClienteMaiorIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteMaiorIdadeActionPerformed
@@ -1388,18 +1390,19 @@ public class Cadastro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuscarProdutoPrecoActionPerformed
 
     private void btnBuscarProdutoDescricaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdutoDescricaoActionPerformed
-        try{
+         try{
             tbl2.setNumRows(0);
             if(txtBuscarProdutoDescricao.getText().equals("")){
                 throw new StringNullException();
             }
             else{
-            String description = (txtBuscarProdutoDescricao.getText());
+            String description = (txtBuscarProdutoDescricao.getText().toLowerCase());
             int aux = 0;
-            ArrayList<Produto>products = this.plControl.getProducts();
+            ArrayList<Produto>products = plControl.getProducts();
             for(Produto p: products){
-                if(p.getDescricao().equals(description)){
-                   tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
+                JOptionPane.showMessageDialog(null, p.getDescricao());
+                if(p.getDescricao().toLowerCase().startsWith(description)){
+                   tbl2.addRow(new Object[]{p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
                    aux = 1;
                 }
             }
@@ -1456,7 +1459,6 @@ public class Cadastro extends javax.swing.JFrame {
             int aux = 0;
             ArrayList<Produto>products = this.plControl.getProducts();
             for(Produto p: products){
-                JOptionPane.showMessageDialog(null, code + " Teste");
                 if(p.getCodigo() == (code)){
                    tbl2.addRow(new Object[]{p.getNome(),p.getCodigo(),p.getDescricao(),p.getBanda(),p.getPreco()});
                    aux = 1;
